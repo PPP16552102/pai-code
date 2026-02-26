@@ -1,0 +1,29 @@
+{
+  "name": "@pai-code/playground",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "webpack serve -c ./config/webpack.config.js --env development",
+    "start": "cross-env node ./scripts/start.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "cross-env": "catalog:"
+  },
+  "devDependencies": {
+    "@babel/core": "catalog:",
+    "typescript": "catalog:",
+    "babel-loader": "catalog:",
+    "ts-loader": "catalog:",
+    "webpack": "catalog:",
+    "webpack-cli": "catalog:",
+    "webpack-merge": "catalog:",
+    "webpack-dev-server": "catalog:",
+    "html-webpack-plugin": "catalog:"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0"
+}

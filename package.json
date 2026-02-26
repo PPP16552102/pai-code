@@ -1,0 +1,21 @@
+{
+  "name": "@pai-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env node ./scripts/build.js",
+    "start": "pnpm --filter playground start",
+    "playground:dev": "pnpm --filter playground dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "dependencies": {
+    "cross-env": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

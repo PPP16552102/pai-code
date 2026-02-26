@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["es2015", "dom"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "baseUrl": "./packages",
+    "useDefineForClassFields": true,
+    "paths": {
+      "@pai/code-*": ["./*/src"]
+    },
+    "outDir": "lib"
+  },
+  "include": ["packages/**/*"],
+  "exclude": ["**/tests/*", "**/*.test.ts", "**/lib", "**/es", "node_modules"]
+}
