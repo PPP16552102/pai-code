@@ -9,9 +9,13 @@
     "build": "tsc"
   },
   "dependencies": {
-    "cross-env": "catalog:"
+    "cross-env": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
   },
   "devDependencies": {
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
     "@babel/core": "catalog:",
     "typescript": "catalog:",
     "babel-loader": "catalog:",

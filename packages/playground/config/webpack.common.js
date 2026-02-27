@@ -1,16 +1,20 @@
-import { resolve } from 'node:path';
+import { dirname, resolve } from 'node:path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import { fileURLToPath } from 'node:url';
+
+const _filename = fileURLToPath(import.meta.url);
+const _dirname = dirname(_filename);
 
 export default {
   entry: './src/index.tsx',
   output: {
     filename: 'script/[name].[contenthash].js',
-    path: resolve(__dirname, '../dist'),
+    path: resolve(_dirname, '../dist'),
     clean: true
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
+      '@': resolve(_dirname, 'src'),
     },
   },
   module: {
