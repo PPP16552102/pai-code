@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack serve -c ./config/webpack.config.js --env development",
     "start": "cross-env node ./scripts/start.js",
-    "build": "tsc"
+    "build": "webpack --config ./config/webpack.config.js --env production"
   },
   "dependencies": {
     "cross-env": "catalog:",
@@ -17,6 +17,9 @@
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "@babel/core": "catalog:",
+    "@babel/preset-react": "catalog:",
+    "@babel/preset-typescript": "catalog:",
+    "@babel/preset-env": "catalog:",
     "typescript": "catalog:",
     "babel-loader": "catalog:",
     "ts-loader": "catalog:",
